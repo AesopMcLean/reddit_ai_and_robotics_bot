@@ -1,0 +1,35 @@
+{
+  "miscellaneous": [
+    0,
+    {
+      "artificial intell": 0
+    }
+  ],
+  "robotics": [
+    0,
+    {
+      "robot": 0
+    }
+  ],
+  "automation": [
+    0,
+    {
+      "automat": 0,
+      "autonomous": 0
+    }
+  ],
+  "machine learning": [
+    0,
+    {
+      "machine learn": 0,
+      "machine vision": 0
+    }
+  ],
+  "deep learning": [
+    0,
+    {
+      "deep learn": 0,
+      "neural net": 0
+    }
+  ]
+}
