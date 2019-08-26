@@ -25,7 +25,7 @@ SEARCH_SUBREDDITS = ['science', 'robotics', 'technology', 'sciences', 'everythin
 with open('flair_choices.json') as json_file:
     FLAIR_CHOICES = json.load(json_file)
 
-with open("ai_bot_credentials.yml", 'r') as yml_file:
+with open('ai_bot_credentials.yml', 'r') as yml_file:
     credentials = yaml.safe_load(yml_file)
 
 
@@ -141,6 +141,11 @@ def main():
 
 
 if __name__ == "__main__":
+    logf = open("exception.log", "w")
     print("%s: Started\n-----" % credentials["username"])
     time.sleep(15)
-    main()
+    try:
+        main()
+    except Exception as e:
+        logf.write("Exception on {0}: {1}\n".format(str(datetime.datetime.now().strftime("%a, %b %d, %Y %I:%M:%S %p")),
+                                                    str(e)))
